@@ -185,4 +185,4 @@ P_wind = diag(v_n_var, v_e_var, r_tas)
 
 wind_jac = wind_est.jacobian([v_n, v_e, tas_meas])
 wind_jac_simple = cse(wind_jac, symbols('L0:30'))
-write_simplified(wind_jac_simple, "cov_init.txt", "L")
+#write_simplified(wind_jac_simple, "cov_init.txt", "L")
